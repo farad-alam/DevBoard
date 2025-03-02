@@ -110,6 +110,10 @@ let insertAssingmentData = (data) => {
   //   Attach Clear Log enevt
   let clearBtn = document.getElementById("clear-log");
   clearBtn.addEventListener("click", clearLogMessages);
+
+//   Attach change background color button
+let colorbtn = document.getElementById("color-toggle");
+colorbtn.addEventListener("click", changeBGColor)
 };
 
 async function loadData() {
@@ -128,13 +132,28 @@ async function loadData() {
 document.addEventListener("DOMContentLoaded", loadData);
 
 
-
-
 function insertDates (){
     document.getElementById("today-day").innerHTML = todayDay()
     document.getElementById("today-date").innerHTML = todayDate()
 }
 document.addEventListener("DOMContentLoaded", insertDates);
+
+function changeBGColor(){
+    let colors = [
+      "bg-red-200",
+      "bg-orange-200",
+      "bg-amber-200",
+      "bg-lime-200",
+      "bg-emerald-200",
+      "bg-cyan-200",
+      "bg-violet-200",
+      "bg-pink-200",
+    ];
+    let body = document.getElementsByTagName("body")[0];
+    // body.classList.add(colors[Math.floor(Math.random() * colors.length)]);
+    body.className = colors[Math.floor(Math.random() * colors.length)];
+
+}
 
 
 
