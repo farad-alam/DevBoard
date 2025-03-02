@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "company": "ShopEase",
     "title": "Fix Mobile Button Issue",
     "description": "Debug using Chrome DevTools, check for overlapping issues.",
@@ -7,6 +8,7 @@
     "status": "Completed"
   },
   {
+    "id": 2,
     "company": "CloudSync",
     "title": "Add Dark Mode",
     "description": "Store the user's preference in localStorage, update CSS variables.",
@@ -14,6 +16,7 @@
     "status": "Completed"
   },
   {
+    "id": 3,
     "company": "SwiftPay",
     "title": "Optimize Home Page",
     "description": "Debug using Chrome DevTools, check for overlapping issues.",
@@ -21,6 +24,7 @@
     "status": "Completed"
   },
   {
+    "id": 4,
     "company": "Meta",
     "title": "Add new emoji 👐",
     "description": "Debug using Chrome DevTools, check for overlapping issues.",
@@ -28,6 +32,7 @@
     "status": "Completed"
   },
   {
+    "id": 5,
     "company": "Google LLC",
     "title": "Integrate OpenAI API",
     "description": "Debug using Chrome DevTools, check for overlapping issues.",
@@ -35,6 +40,7 @@
     "status": "Completed"
   },
   {
+    "id": 6,
     "company": "Glassdoor",
     "title": "Improve Job Searching",
     "description": "Debug using Chrome DevTools, check for overlapping issues.",
