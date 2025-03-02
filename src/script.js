@@ -118,5 +118,5 @@ function changeBGColor() {
 
 function goBlogpage() {
   console.log("blog page clicked");
-  window.location.href = "/blog.html";
+  window.location.href = "/DevBoard/blog.html";
 }
