@@ -27,7 +27,7 @@
             class="bg-sky-100 px-3 py-1 rounded-lg flex gap-2 justify-start items-center"
           >
             <img src="./assets/checkbox.png" class="h-6 w-6" alt="" />
-            <p class="text-xl font-bold">23</p>
+            <p id="taskpoint" class="text-xl font-bold">23</p>
           </div>
           <!-- Color Toggle -->
           <div id="color-toggle">
@@ -52,7 +52,7 @@
             <img src="./assets/checkbox.png" class="w-4 h-4" alt="" />
             <div>
               <small class="text-gray-500">Task Assigned</small>
-              <p class="font-bold text-xl">05</p>
+              <p id="taskcount" class="font-bold text-xl">06</p>
             </div>
           </div>
           <!-- Discover -->
@@ -65,43 +65,165 @@
           </div>
           <!-- Today Date -->
           <div
-            id="today-date"
+            id="day-and-date"
             class="col-span-3 flex gap-4 bg-sky-100 p-2 justify-center items-center rounded-lg"
           >
             <img src="./assets/calender.png" class="w-6 h-6" alt="" />
             <div>
-              <p>Wed,</p>
-              <p class="text-lg font-bold">Jul 28 2025</p>
+              <p id="today-day">Wed,</p>
+              <p id="today-date" class="text-lg font-bold">Jul 28 2025</p>
             </div>
           </div>
         </div>
         <!-- Assingment Cards -->
         <div id="assingmentcards" class="grid grid-cols-3 gap-4 mt-10">
           <!-- card -->
-          
-         
+          <div class="p-3 space-y-2 bg-sky-50 rounded-lg flex flex-col justify-between">
+            <div id="card-top" class="space-y-2">
+              <p class="bg-base-100 p-2 rounded-lg inline-flex">ShopEase</p>
+              <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+              <p class="bg-base-100 py-2 px-1 rounded-lg text-gray-400">
+                Debug using Chrome DevTools, check for overlapping issues.
+              </p>
+            </div>
+            <!--Dead Lines and Status  -->
+            <div
+              class="flex justify-between items-end border-t-2 border-dashed pt-3"
+            >
+              <div>
+                <small class="text-gray-500">Deadline</small>
+                <p class="font-bold text-gray-800">21 March 2025</p>
+              </div>
+              <p class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
+                Completed
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="p-3 space-y-2 bg-sky-50 rounded-lg">
+            <p class="bg-base-100 p-2 rounded-lg inline-flex">ShopEase</p>
+            <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+            <p class="bg-base-100 py-2 px-1 rounded-lg text-gray-400">
+              Debug using Chrome DevTools, check for overlapping issues. Debug
+              using Chrome DevTools, check for overlapping issues.
+            </p>
+            <!--Dead Lines and Status  -->
+            <div
+              class="flex justify-between items-center border-t-2 border-dashed mt-12"
+            >
+              <div>
+                <small class="text-gray-500">Deadline</small>
+                <p class="font-bold text-gray-800">21 March 2025</p>
+              </div>
+              <p class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
+                Completed
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="p-3 space-y-2 bg-sky-50 rounded-lg">
+            <p class="bg-base-100 p-2 rounded-lg inline-flex">ShopEase</p>
+            <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+            <p class="bg-base-100 py-2 px-1 rounded-lg text-gray-400">
+              Debug using Chrome DevTools, check for overlapping issues.
+            </p>
+            <!--Dead Lines and Status  -->
+            <div
+              class="flex justify-between items-center border-t-2 border-dashed mt-12"
+            >
+              <div>
+                <small class="text-gray-500">Deadline</small>
+                <p class="font-bold text-gray-800">21 March 2025</p>
+              </div>
+              <p class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
+                Completed
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="p-3 space-y-2 bg-sky-50 rounded-lg">
+            <p class="bg-base-100 p-2 rounded-lg inline-flex">ShopEase</p>
+            <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+            <p class="bg-base-100 py-2 px-1 rounded-lg text-gray-400">
+              Debug using Chrome DevTools, check for overlapping issues.
+            </p>
+            <!--Dead Lines and Status  -->
+            <div
+              class="flex justify-between items-center border-t-2 border-dashed mt-12"
+            >
+              <div>
+                <small class="text-gray-500">Deadline</small>
+                <p class="font-bold text-gray-800">21 March 2025</p>
+              </div>
+              <p class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
+                Completed
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="p-3 space-y-2 bg-sky-50 rounded-lg">
+            <p class="bg-base-100 p-2 rounded-lg inline-flex">ShopEase</p>
+            <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+            <p class="bg-base-100 py-2 px-1 rounded-lg text-gray-400">
+              Debug using Chrome DevTools, check for overlapping issues.
+            </p>
+            <!--Dead Lines and Status  -->
+            <div
+              class="flex justify-between items-center border-t-2 border-dashed mt-12"
+            >
+              <div>
+                <small class="text-gray-500">Deadline</small>
+                <p class="font-bold text-gray-800">21 March 2025</p>
+              </div>
+              <p class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
+                Completed
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="p-3 space-y-2 bg-sky-50 rounded-lg">
+            <p class="bg-base-100 p-2 rounded-lg inline-flex">ShopEase</p>
+            <h2 class="text-xl font-bold">Fix Mobile Button Issue</h2>
+            <p class="bg-base-100 py-2 px-1 rounded-lg text-gray-400">
+              Debug using Chrome DevTools, check for overlapping issues.
+            </p>
+            <!--Dead Lines and Status  -->
+            <div
+              class="flex justify-between items-center border-t-2 border-dashed mt-12"
+            >
+              <div>
+                <small class="text-gray-500">Deadline</small>
+                <p class="font-bold text-gray-800">21 March 2025</p>
+              </div>
+              <p class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
+                Completed
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <!-- SideBar Start Here -->
       <div id="sidebar" class="basis-1/4 bg-base-100 p-4 rounded-lg">
         <!-- sidebar header -->
-        <div id="sidebar-header" class="flex flex-col gap-4 items-center mt-5 border-b-2 border-dashed pb-4" >
+        <div
+          id="sidebar-header"
+          class="flex flex-col gap-4 items-center mt-5 border-b-2 border-dashed pb-4"
+        >
           <div class="flex gap-5">
             <img src="./assets/activity.png" alt="" />
             <p>Activity Log</p>
           </div>
-          <p class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
+          <button id="clear-log" class="bg-indigo-600 rounded-lg px-4 py-2 text-white">
             Clear History
-          </p>
+          </button>
         </div>
         <!-- Log messages -->
-         <div id="log-messages">
-          <p class="p-2 bg-sky-50 my-2 text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-          <p class="p-2 bg-sky-50 my-2 text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-         </div>
+        <div id="log-messages">
+          
+        </div>
       </div>
     </main>
 
-    <script type="module" src="./src/script.js"></script>
+    <script type="module" src="./src/script.js" defer></script>
   </body>
 </html>
