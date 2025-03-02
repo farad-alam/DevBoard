@@ -33,7 +33,7 @@
           <div id="color-toggle">
             <img
               src="./assets/theme-btn.png"
-              class="bg-sky-100 p-1 rounded-full w-10"
+              class="bg-sky-100 p-1 rounded-full w-10 cursor-pointer"
               alt=""
             />
           </div>
@@ -58,7 +58,7 @@
           <!-- Discover -->
           <div
             id="discover"
-            class="bg-indigo-600 col-span-6 flex gap-4 py-3 px-6 justify-center items-center rounded-lg"
+            class="bg-indigo-600 col-span-6 flex gap-4 py-3 px-6 justify-center items-center rounded-lg cursor-pointer"
           >
             <img src="./assets/board.png" class="w-16" alt="" />
             <p class="text-white text-2xl">Discover Something New Today!</p>
@@ -267,10 +267,11 @@
           </button>
         </div>
         <!-- Log messages -->
-        <div id="log-messages"></div>
+        <div id="log-messages" class="flex flex-col space-y-2 mt-2">
+          
+        </div>
       </div>
     </main>
-    <textarea name="" id="demo"></textarea>
     <script type="module" src="./src/script.js" defer></script>
   </body>
 </html>
