@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard Blog</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-200">
+    <header class="w-10/12 mx-auto pt-5">
+      <div
+        class="flex py-3 px-4 bg-base-100 shadow-sm rounded-lg justify-between justify-items-center"
+      >
+        <div class="flex justify-center items-center gap-2">
+          <img src="./assets/logo.png" class="w-8 h-8" alt="" />
+          <a class="text-xl">Dev<span class="font-bold">Board</span></a>
+        </div>
+        <div class="flex gap-6 items-center">
+          <!-- Question Solved -->
+          <div
+            class="bg-sky-100 px-3 py-1 rounded-lg flex gap-2 justify-start items-center"
+          >
+            <img src="./assets/checkbox.png" class="h-6 w-6" alt="" />
+            <p id="taskpoint" class="text-xl font-bold">23</p>
+          </div>
+          <!-- Color Toggle -->
+          <div id="color-toggle">
+            <img
+              src="./assets/theme-btn.png"
+              class="bg-sky-100 p-1 rounded-full w-10"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <script type="module" src="./src/script.js" defer></script>
+  </body>
+</html>

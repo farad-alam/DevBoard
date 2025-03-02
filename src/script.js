@@ -67,38 +67,9 @@ function todayDate() {
   const date = new Intl.DateTimeFormat("en-US", options).format(now);
   return date;
 }
-function genarateAssingmentCard(details) {
-  return ` <div class="p-3 space-y-2 bg-sky-50 rounded-lg flex flex-col justify-between">
-            <div id="card-top" class="space-y-2">
-              <p class="bg-base-100 p-2 rounded-lg inline-flex">${details["company"]}</p>
-              <h2 class="text-xl font-bold">${details["title"]}</h2>
-              <p class="bg-base-100 py-2 px-1 rounded-lg text-gray-400">
-                ${details["description"]}
-              </p>
-            </div>
-            <!--Dead Lines and Status  -->
-            <div
-              class="flex justify-between items-end border-t-2 border-dashed pt-3"
-            >
-              <div>
-                <small class="text-gray-500">Deadline</small>
-                <p class="font-bold text-gray-800">${details["deadline"]}</p>
-              </div>
-              <button id="${details["id"]}" data-title="${details["title"]}" class="complete-btn bg-indigo-600 rounded-lg px-4 py-2 text-white">
-                ${details["status"]}
-              </button>
-            </div>
-          </div>`;
-}
-let insertAssingmentData = (data) => {
-  let assingmentDiv = document.getElementById("assingmentcards");
-  let cards = data.map((item) => {
-    return genarateAssingmentCard(item);
-  });
-  console.log(cards.length, cards);
-  assingmentDiv.innerHTML = cards.join("");
 
-  // Attach Complete event listeners AFTER inserting HTML
+let insertAssingmentData = () => {
+
   document.querySelectorAll(".complete-btn").forEach((button) => {
     button.addEventListener("click", function () {
       let id = this.id;
@@ -116,20 +87,8 @@ let colorbtn = document.getElementById("color-toggle");
 colorbtn.addEventListener("click", changeBGColor)
 };
 
-async function loadData() {
-  try {
-    let response = await fetch("../data.json");
-    let data = await response.json();
-    if (data.length > 0) {
-      insertAssingmentData(data);
-    }
-  } catch (err) {
-    console.log("Unexpected Eror Happend", err);
-    alert("Unexpected Eror Happend");
-  }
-}
 
-document.addEventListener("DOMContentLoaded", loadData);
+document.addEventListener("DOMContentLoaded", insertAssingmentData);
 
 
 function insertDates (){
@@ -150,7 +109,6 @@ function changeBGColor(){
       "bg-pink-200",
     ];
     let body = document.getElementsByTagName("body")[0];
-    // body.classList.add(colors[Math.floor(Math.random() * colors.length)]);
     body.className = colors[Math.floor(Math.random() * colors.length)];
 
 }
